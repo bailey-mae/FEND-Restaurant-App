@@ -67,6 +67,8 @@ self.addEventListener('install', function(e) {
                     console.error(err);
         })
 }*/
+
+/* resource: https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker*/
 self.addEventListener("fetch", function(event) {
     const url = new URL(event.request.url);
     event.respondWith(
