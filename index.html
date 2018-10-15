@@ -21,15 +21,15 @@ b      <!DOCTYPE html>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" aria-label="Map with restaurant location markers" tabindex="-1" role="application"></div>
     </section>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
-        <select role="tablist" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+        <select aria-label="Select restaurant by neighborhood"role="tablist" tabindex="2" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select role="tablist" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+        <select aria-label="Select restaurant by cuisine type" role="tablist" tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
