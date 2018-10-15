@@ -46,7 +46,7 @@ self.addEventListener('install', function(e) {
     );
 });
 
-self.addEventListener('fetch', function(e) {
+/*self.addEventListener('fetch', function(e) {
     e.respondWith(
         caches.match(e.request).then(function(response){
             if (response) {
@@ -66,4 +66,12 @@ self.addEventListener('fetch', function(e) {
                 .catch(function(err) {
                     console.error(err);
         })
-}
+}*/
+self.addEventListener("fetch", function(event) {
+    const url = new URL(event.request.url);
+    event.respondWith(
+        caches.match(event.request).then(function(response) {
+            return response || fetch(event.request);
+        })
+    );
+});
