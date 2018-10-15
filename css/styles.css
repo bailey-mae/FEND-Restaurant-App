@@ -243,7 +243,6 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
   width: 50%;
 }
 #reviews-container {
@@ -277,3 +276,47 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/*Media Queries*/
+
+@media screen and (min-width: 320px) and (max-width: 410px) {
+    nav h1 a {
+        font-size: 0.7em;
+        letter-spacing: 5px;
+    }
+    .filter-options h2 {
+        font-size: 1em;
+    }
+    .filter-options select {
+        font-size: 1em;
+        width: 70%;
+    }
+    #restaurant-name {
+        font-size: 1.5em;
+    }
+    #restaurant-address {
+        font-size: 1.1em;
+    }
+    #restaurant-hours {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #map {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    #reviews-list {
+        width: 90%;
+        margin-left: 10px;
+    }
+}
+
+/*other mobile devices*/
+
+@media screen and (max-width: 450px) {
+    nav h1 a {
+        letter-spacing: 5px;
+    }
+}
+
