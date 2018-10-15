@@ -49,11 +49,14 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 #footer {
   background-color: #444;
   color: #aaa;
-  font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  font-size: .5rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  display: flex;
 }
 /* ====================== Navigation ====================== */
 nav {
@@ -258,7 +261,6 @@ nav h1 a {
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 0px;
   width: 50%;
   display:flex;
   flex-direction:column;
@@ -297,4 +299,32 @@ nav h1 a {
   color: #666;
 }
 
+
+
+/*media queries*/
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  #maincontent {
+    flex-direction: row-reverse;
+  }
+  #restaurant-options {
+    flex: 1;
+    max-width: 40vw;
+  }
+  map {
+    flex: 1;
+  }
+  #restaurants-list {
+    max-height: 79vh;
+    overflow: auto;
+  }
+  #restaurant-details {
+    max-width: 500px;
+    max-height: 90vh;
+    overflow: auto;
+  }
+  .restaurant-img {
+    max-width: 500px;
+  }
+}
 
