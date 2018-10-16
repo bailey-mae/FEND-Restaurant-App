@@ -1,6 +1,6 @@
 # Udacity FEND Degree Program
 ---
-#### Restaurant Reviews
+### Restaurant Reviews
 
 ## Project Overview:
 
@@ -20,7 +20,7 @@ Project information can be found at [Udacity](https://www.udacity.com/)
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.
 
-## Additional Source Material: referenced in completing this project
+### Additional Source Material referenced in completing this project
 
 [Caching files with service worker](https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker), [Use of vmin in CSS styling](https://www.w3schools.com/cssref/css_units.asp), [Additional vmin resource](https://css-tricks.com/simple-little-use-case-vmin)
 
